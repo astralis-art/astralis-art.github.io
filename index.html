@@ -3,9 +3,70 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Art</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Artists</title>
+
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<p>Hello World</p>
+		<div class="carousel" id="carousel-1">
+			<button class="carousel__button carousel__button--left">
+				<img src="img/left.svg" alt="" />
+			</button>
+
+			<div class="carousel__track-container">
+				<ul class="carousel__track">
+					<li class="carousel__slide current-slide">
+						<img class="carousel__image" src="img/slide-1.jpg" alt="" />
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="img/slide-2.jpg" alt="" />
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="img/slide-3.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+
+			<button class="carousel__button carousel__button--right">
+				<img src="img/right.svg" alt="" />
+			</button>
+		</div>
+
+		<div class="title-bar">
+			<ul>
+				<li><a href="./more.html">more art</a></li>
+				<li><a href="./order.html">order</a></li>
+				<li><a href="./about.html">about</a></li>
+			</ul>
+
+			<h1 class="title-bar__title">ART.</h1>
+		</div>
+
+		<div class="carousel" id="carousel-2">
+			<button class="carousel__button carousel__button--left">
+				<img src="img/left.svg" alt="" />
+			</button>
+
+			<div class="carousel__track-container">
+				<ul class="carousel__track">
+					<li class="carousel__slide current-slide">
+						<img class="carousel__image" src="img/slide-1.jpg" alt="" />
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="img/slide-2.jpg" alt="" />
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="img/slide-3.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+
+			<button class="carousel__button carousel__button--right">
+				<img src="img/right.svg" alt="" />
+			</button>
+		</div>
+
+		<script src="js/carousel.js"></script>
 	</body>
 </html>
