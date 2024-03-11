@@ -7,10 +7,10 @@
 
 .carousel {
 	position: relative;
-	height: 40vh;
+	height: 35vh;
 	width: 80%;
 	max-width: 50rem;
-	margin: 0 auto;
+	margin: 2.5vh auto;
 }
 
 .carousel__image {
@@ -69,15 +69,46 @@
 
 .title-bar {
 	height: 20vh;
-	margin: 0;
+	width: 80vw;
+	max-width: 100ch;
 	display: flex;
+	margin: auto;
 }
 
 .title-bar__title {
 	margin: auto 2rem auto auto;
 }
 
+.title-bar__navigation {
+	flex-direction: row;
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+}
+
+.title-bar__navigation li a {
+	color: white;
+	text-decoration: none;
+
+	padding: 2.5rem;
+	margin-left: 2rem;
+
+	transition: background-color 0.2s ease-in;
+
+	text-wrap: none;
+}
+
+.title-bar__navigation li a:first-of-type {
+	margin-left: 0;
+}
+
+.title-bar__navigation li a:hover {
+	background-color: rgb(21, 21, 21);
+}
+
 body {
 	background-color: black;
 	color: white;
+
+	font-family: Arial, Helvetica, sans-serif;
 }
